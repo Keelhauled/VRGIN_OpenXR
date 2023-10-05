@@ -211,6 +211,9 @@ namespace VRGIN.Modes
             }
 
             CheckInput();
+
+            Left.gameObject.SetActive(Left.IsTracking);
+            Right.gameObject.SetActive(Right.IsTracking);
         }
 
         protected void CheckInput()
